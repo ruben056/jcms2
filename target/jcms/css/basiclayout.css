@@ -1,0 +1,34 @@
+/* Stuff for header*/
+
+div#header {
+	min-height: 100px;
+}
+
+
+/* Stuff for the sticky footer */
+
+
+html,body {
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -142px;
+}
+
+#wrapper:after {
+	content: "";
+	display: block;
+}
+
+#footer,#wrapper:after {
+	/* .push must be the same height as footer */
+	height: 142px;
+}
+
+#footer,#header {
+	background: orange;
+	color:white;	
+}

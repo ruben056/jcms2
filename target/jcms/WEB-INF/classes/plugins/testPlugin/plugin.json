@@ -1,0 +1,16 @@
+{
+	"name":"testPlugin",
+	"description": "Testing the plugin framework",
+	"version":"0",
+	"admin":{
+		"menu":"TODO",
+		"tabName":"Tests",
+		"tabFunction" : "pluginTestsTab"
+		},	
+	"triggers" : [{
+		"trigger":"pageContentCreated",
+		"action": "pageCommentsShow"
+		}],
+		"widgetClass": "rd.util.widget.plugin.TestPlugin"
+}
+

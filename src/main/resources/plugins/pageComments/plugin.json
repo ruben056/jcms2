@@ -1,0 +1,16 @@
+{
+	"name":"pageComments",
+	"description": "Allow visitors to comment on pages",
+	"version":"0",
+	"admin":{
+		"menu":"TODO",
+		"tabName":"Comments",
+		"tabFunction" : "pageCommentsAdminPageTab"
+		},	
+	"triggers" : [{
+		"trigger":"pageContentCreated",
+		"action": "pageCommentsShow"
+		}],
+		"widgetClass": "rd.util.widget.plugin.PageCommentsWidget"
+}
+

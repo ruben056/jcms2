@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.rdsucces{
+	background-color: #E9F2D3; 
+	color: #9ACC47;
+	border: 1px solid #9ACC47;
+	padding: 5px;
+	margin: 5px;
+}
+.rderror{
+	background-color: #FEE8EA; 
+	color: #DA6579;
+	border: 1px solid #DA6579;
+	padding: 5px;
+	margin: 5px;
+}
+.rdalert{
+	background-color: #FCF7E4; 
+	color: #E2C02D;
+	border: 1px solid #E2C02D;
+	padding: 5px;
+	margin: 5px;
+}
+.rdinfo{
+	background-color: #DCE9F2; 
+	color: #5B95BD;
+	border: 1px solid #5B95BD;
+	padding: 5px;
+	margin: 5px;
+}

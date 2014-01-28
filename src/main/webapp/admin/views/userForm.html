@@ -1,0 +1,40 @@
+<form action='' method='post'>
+	<input type='hidden' name='id' value=" + $id + " />
+	<table>
+		<tr>
+			<th>Email</th>
+			<td>
+				<input name='email' value=" + $email + " />
+			</td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td>
+				<input name='password' type='password' />
+			</td>
+		</tr>
+		<tr>
+			<th>(repeat)</th>
+			<td>
+				<input name='password2' type='password' />
+			</td>
+		</tr>
+		<tr>
+			<th>Groups</th>
+			<td class='groups'>
+<!-- 			For each group make a checkbox like: -->
+<!-- 			<input type='checkbox' name='groups[" + $k + "]'" checked="if in the group"></input> -->
+			</td>
+		</tr>
+		<tr>
+			<th>Active</th>
+			<td>
+				<select name='active'>
+					<option value='0'>No</option>
+					<option value='1'>Yes</option> <!-- Set on of these to selected -->
+				</select>
+			</td>
+		</tr>
+	</table>
+	<input type='submit' name='action' value='Save' />
+</form>

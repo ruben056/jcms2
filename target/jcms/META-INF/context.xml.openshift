@@ -1,0 +1,14 @@
+<Context path="/cms" reloadable="true" docBase="work/Catalina/localhost">  
+
+
+<!-- OPENSHIFT_MYSQL_DB_PORT=3306 -->
+<!-- OPENSHIFT_MYSQL_DB_HOST=127.7.190.2 -->
+<!-- OPENSHIFT_MYSQL_DB_PASSWORD=unW2h67TWGEP -->
+<!-- OPENSHIFT_MYSQL_IDENT=redhat:mysql:5.1:0.2.1 -->
+<!-- OPENSHIFT_MYSQL_DB_USERNAME=adminIM4hrvr -->
+
+     <Resource name="jdbc/cms" auth="Container" type="javax.sql.DataSource"
+               maxActive="100" maxIdle="30" maxWait="10000"
+               username="adminIM4hrvr" password="unW2h67TWGEP" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://127.7.190.2:3306/rd"/>
+</Context>    

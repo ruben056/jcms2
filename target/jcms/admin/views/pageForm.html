@@ -1,0 +1,120 @@
+<form id="pages_form" method="post" title="Save">
+	<div class="tabs">
+		<ul>
+			<li>
+				<a href="#tabs-common-details">Common Details</a>
+			</li>
+			<li>
+				<a href="#tabs-advanced-options">Advanced Options</a>
+			</li>
+		</ul>
+
+		<div id="tabs-common-details">
+			<table style="width:100%;">
+				<tr>
+					<input type="hidden" id="id" name="id" value="" />
+					<th width="10%">name</th>
+					<td width="23%">
+						<input id="name" name="name" value="" />
+					</td>
+					<th width="10%">title</th>
+					<td width="23%">
+						<input id="title" name="title" value="" />
+					</td>
+
+					<th colspan="2">
+						<!-- $u='/'.str_replace(' ','-',$page['name']); -->
+						<a id="viewPage" style="font-weight:bold;color:red" href=""
+							target="_blank">VIEW PAGE</a>
+
+					</th>
+				</tr>
+				<tr>
+					<th>type</th>
+					<td>
+						<select id="type" name="type">
+							<option value="0">normal</option>
+<!-- 							// insert plugin page types here -->
+						</select>
+					</td>
+
+					<th>parent</th>
+					<td>
+						<select id="parent" name="parent">
+							<option value="0"> -- none -- </option>
+						</select>
+					</td>
+
+					<!-- if(!isset($page['associated_date']) -->
+					<!-- || !preg_match('/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/',$page['associated_date']) -->
+					<!-- || $page['associated_date']=='0000-00-00'){ -->
+
+					<!-- $page['associated_date']=date('Y-m-d'); -->
+					<!-- } -->
+
+					<th>Associated Date</th>
+					<td>
+						<input id="associated_date" name="associated_date" class="date-human"
+							value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>body</th>
+					<td colspan="5">
+						<textarea id="body" name="body"></textarea>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Advanced Options -->
+		<div id="tabs-advanced-options">
+			<table>
+				<tr>
+					<td>
+						<h4>MetaData</h4>
+						<table>
+							<tr>
+								<th>keywords</th>
+								<td>
+									<input id="keywords" name="keywords" value="" />
+								</td>
+							</tr>
+							<tr>
+								<th>description</th>
+								<td>
+									<input id="description" name="description" value="" />
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<!-- TODO if these specials are more dynamic this should be generated via ajax afterwards... -->
+						<h4>Special</h4>
+							<input type="checkbox" name="special[0]"> Is Home Page <br/>
+							<input type="checkbox" name="special[1]"> Does not appear in navigation <br/>
+						<h4>Other</h4>
+						<table>
+							<tr>
+								<th>Order of sub-pages</th>
+								<td>
+									<select id="order" name="page_vars[order_of_sub_pages]">
+										<option value="as shown in admin menu">pageVarVal</option>
+										<option value="alphabetically">pageVarVal</option>
+									</select>
+									<select name="page_vars[order_of_sub_pages_dir]">
+										<option value="0">ascending (a-z, 0-9)</option>
+										<option value="1">descending (z-a, 9-0)</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	<input type="submit" id="submitForm" name="action" value="Insert Page Details" />
+</form>

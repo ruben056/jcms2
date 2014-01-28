@@ -1,0 +1,8 @@
+<Context path="/cms" reloadable="true" docBase="work/Catalina/localhost">  
+
+ 	<Resource name="jdbc/cms" auth="Container" type="javax.sql.DataSource"
+                maxActive="100" maxIdle="30" maxWait="10000" 
+                username="cmsuser" password="cmspass" driverClassName="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://localhost:3306/cmsdb"/>
+
+</Context>    

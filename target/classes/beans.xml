@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="UserMgr" class="rd.mgr.user.UserMgr"></bean>
+
+	<bean id="PageMgr" class="rd.mgr.page.PageMgr"></bean>
+
+	<bean id="PageCommentMgr" class="rd.mgr.pagecomment.PageCommentMgr"></bean>
+
+	<bean id="LayoutMgr" class="rd.mgr.layout.LayoutMgr"></bean>
+	
+	<bean id="ImageMgr" class="rd.mgr.images.ImageMgr"></bean>
+	
+</beans>
